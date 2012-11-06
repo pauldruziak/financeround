@@ -2,6 +2,10 @@ source 'https://rubygems.org'
 
 gem 'rails', '3.2.8'
 gem 'pg', '~> 0.14.1'
+gem 'jquery-rails', '~> 2.1.3'
+gem 'haml-rails', '~> 0.3.5'
+gem 'devise', '~> 2.1.2'
+
 
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
@@ -9,9 +13,6 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
   gem 'bootstrap-sass', '~> 2.1.1'
 end
-
-gem 'jquery-rails', '~> 2.1.3'
-gem 'haml-rails', '~> 0.3.5'
 
 group :test, :development do
   gem 'rspec-rails', '~> 2.11.0'
@@ -21,7 +22,7 @@ group :test, :development do
   gem 'guard-rspec', '~> 2.1.1'
   gem 'guard-cucumber', '~> 1.2.2'
   gem 'sqlite3', '~> 1.3.6'
-  gem "rb-fsevent", "~> 0.9.2"
+  gem 'rb-fsevent', '~> 0.9.2'
   gem 'fivemat', '~> 1.1.0'
   gem 'faker'
 end
