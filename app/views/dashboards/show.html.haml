@@ -1,0 +1,6 @@
+%ul
+  - prev_money = nil
+  - @monies.each do |money|
+    - if prev_money
+      %li #{prev_money.date.strftime("%d.%m")}-#{money.date.strftime("%d.%m")} #{money.sum - prev_money.sum}
+    - prev_money = money
